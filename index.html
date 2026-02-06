@@ -1,26 +1,134 @@
 <!DOCTYPE html>
-<!-- FINAL BUILD: PROMISEDLAND REAL ESTATE -->
-<!-- Full AI + Voice + Admin + Maps + Firebase Ready -->
-<!-- Exported as per complete chat scope -->
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>PROMISEDLAND REAL ESTATE | Tamil Nadu</title>
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&family=Cinzel">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>PROMISEDLAND REAL ESTATE | AI Powered Tamil Nadu</title>
+<meta name="description" content="PROMISEDLAND REAL ESTATE – AI powered Buy, Sell & Rent platform across Tamil Nadu with village-level intelligence." />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Cinzel:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b1020;--card:#11183a;--pri:#f5c16c;--sec:#6aa6ff;--txt:#e9ecff;--mut:#9aa3ff}
+*{box-sizing:border-box}
+body{margin:0;font-family:Poppins;background:radial-gradient(1200px 600px at 10% -10%,#1a2460,transparent),var(--bg);color:var(--txt)}
+header{position:sticky;top:0;z-index:10;background:rgba(11,16,32,.9);backdrop-filter:blur(10px)}
+.wrap{max-width:1300px;margin:auto;padding:16px}
+.logo{display:flex;align-items:center;gap:14px}
+.logo h1{font-family:Cinzel;font-size:34px;letter-spacing:3px;margin:0;color:var(--pri)}
+nav a{color:var(--txt);text-decoration:none;margin:0 10px;font-weight:500}
+.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:24px}
+.card{background:linear-gradient(180deg,rgba(255,255,255,.07),rgba(255,255,255,.02));border-radius:20px;padding:18px;box-shadow:0 20px 60px rgba(0,0,0,.4)}
+.btn{background:linear-gradient(135deg,var(--pri),var(--sec));border:none;border-radius:12px;padding:12px 16px;font-weight:600;cursor:pointer;color:#000}
+.btn.alt{background:transparent;border:1px solid rgba(255,255,255,.3);color:var(--txt)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+input,select,textarea{width:100%;background:#0c1233;color:var(--txt);border:1px solid rgba(255,255,255,.2);border-radius:10px;padding:10px}
+footer{opacity:.9;text-align:center}
+.badge{display:inline-block;padding:6px 12px;border-radius:999px;background:#1b245c;font-size:12px;margin:4px}
+</style>
 </head>
 <body>
-<h1>PROMISEDLAND REAL ESTATE – FINAL BUILD</h1>
-<p>This is the exported production-ready build.</p>
-<p>Includes:</p>
-<ul>
-<li>AI Chat + Tamil Voice Assistant</li>
-<li>Maps + Heatmap</li>
-<li>Firebase Auth + JWT Ready</li>
-<li>Admin Dashboard</li>
-<li>AI Valuation & Price Prediction</li>
-<li>Legal PDFs & Calculators</li>
-</ul>
-<p>Deploy on Firebase / VPS with backend API.</p>
+<header>
+  <div class="wrap" style="display:flex;justify-content:space-between;align-items:center">
+    <div class="logo">
+      <h1>PROMISED LAND<br>REAL ESTATE</h1>
+    </div>
+    <nav>
+      <a href="#search">Search</a>
+      <a href="#post">Post</a>
+      <a href="#map">Map</a>
+      <a href="#ai">AI</a>
+      <a href="#admin">Admin</a>
+    </nav>
+  </div>
+</header>
+
+<section class="wrap hero">
+  <div class="card">
+    <h1 id="tag">Where Trust Meets Land ✨</h1>
+    <p id="sub" class="mut">AI powered Buy • Sell • Rent across entire Tamil Nadu</p>
+    <div class="grid">
+      <button class="btn">Buy</button>
+      <button class="btn alt">Sell</button>
+      <button class="btn alt">Rent</button>
+    </div>
+    <div style="margin-top:10px">
+      <span class="badge">AI Valuation</span>
+      <span class="badge">40,000+ Villages</span>
+      <span class="badge">Voice AI (Tamil)</span>
+    </div>
+  </div>
+
+  <div class="card" id="ai">
+    <h3>🤖 AI Assistant (Tamil + English)</h3>
+    <input id="q" placeholder="Ex: 10 lakhs plot in Madurai" />
+    <button class="btn" onclick="ai()">Ask AI</button>
+    <div id="chatBox"></div>
+  </div>
+</section>
+
+<section id="search" class="wrap">
+  <h2>Smart Property Search</h2>
+  <div class="grid">
+    <input placeholder="District / Village" />
+    <select><option>Buy</option><option>Sell</option><option>Rent</option></select>
+    <select><option>Plot</option><option>Agriculture</option><option>Apartment</option><option>Villa</option></select>
+    <input placeholder="Budget ₹" />
+    <button class="btn">Search</button>
+  </div>
+</section>
+
+<section id="map" class="wrap">
+  <h2>🗺️ Tamil Nadu Demand Heatmap</h2>
+  <div class="card">
+    <iframe width="100%" height="380" style="border:0;border-radius:18px" loading="lazy"
+      src="https://www.openstreetmap.org/export/embed.html?bbox=76.0%2C8.0%2C80.5%2C13.5&layer=mapnik"></iframe>
+    <p class="mut">Heatmap + property pins (AI demand score)</p>
+  </div>
+</section>
+
+<section id="post" class="wrap">
+  <h2>Post Property (Free)</h2>
+  <div class="grid">
+    <input placeholder="Title" />
+    <input placeholder="Price" />
+    <input placeholder="Village" />
+    <input type="file" />
+    <textarea placeholder="Description"></textarea>
+    <button class="btn">Upload & Preview</button>
+  </div>
+</section>
+
+<section class="wrap">
+  <h2>📊 Advanced Calculators</h2>
+  <div class="grid">
+    <div class="card"><h4>Auto Property Valuation</h4><p>AI estimates based on village trends</p></div>
+    <div class="card"><h4>EMI / ROI</h4><p>Investment intelligence</p></div>
+    <div class="card"><h4>Stamp Duty</h4><p>Tamil Nadu auto calculator</p></div>
+  </div>
+</section>
+
+<section id="admin" class="wrap">
+  <h2>🔐 Admin Login</h2>
+  <div class="grid">
+    <input placeholder="Email" />
+    <input type="password" placeholder="Password" />
+    <button class="btn">Login</button>
+  </div>
+</section>
+
+<footer class="wrap">
+  <p>📧 rera.promizedland@gmail.com | 📞 +91 90805 81547</p>
+  <p>© PROMISEDLAND REAL ESTATE • AI Powered Tamil Nadu</p>
+</footer>
+
+<script>
+function ai(){
+  const q=document.getElementById('q');
+  const box=document.getElementById('chatBox');
+  if(!q.value) return;
+  box.innerHTML+=`<p><b>You:</b> ${q.value}</p>`;
+  box.innerHTML+=`<p><b>AI:</b> Analysing village price, budget & best property options…</p>`;
+  q.value='';
+}
+</script>
 </body>
 </html>
