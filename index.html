@@ -1,134 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>PROMISEDLAND REAL ESTATE | AI Powered Tamil Nadu</title>
-<meta name="description" content="PROMISEDLAND REAL ESTATE – AI powered Buy, Sell & Rent platform across Tamil Nadu with village-level intelligence." />
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Cinzel:wght@600;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Promised Land | Tamil Nadu Real Estate</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 <style>
-:root{--bg:#0b1020;--card:#11183a;--pri:#f5c16c;--sec:#6aa6ff;--txt:#e9ecff;--mut:#9aa3ff}
-*{box-sizing:border-box}
-body{margin:0;font-family:Poppins;background:radial-gradient(1200px 600px at 10% -10%,#1a2460,transparent),var(--bg);color:var(--txt)}
-header{position:sticky;top:0;z-index:10;background:rgba(11,16,32,.9);backdrop-filter:blur(10px)}
-.wrap{max-width:1300px;margin:auto;padding:16px}
-.logo{display:flex;align-items:center;gap:14px}
-.logo h1{font-family:Cinzel;font-size:34px;letter-spacing:3px;margin:0;color:var(--pri)}
-nav a{color:var(--txt);text-decoration:none;margin:0 10px;font-weight:500}
-.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:24px}
-.card{background:linear-gradient(180deg,rgba(255,255,255,.07),rgba(255,255,255,.02));border-radius:20px;padding:18px;box-shadow:0 20px 60px rgba(0,0,0,.4)}
-.btn{background:linear-gradient(135deg,var(--pri),var(--sec));border:none;border-radius:12px;padding:12px 16px;font-weight:600;cursor:pointer;color:#000}
-.btn.alt{background:transparent;border:1px solid rgba(255,255,255,.3);color:var(--txt)}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
-input,select,textarea{width:100%;background:#0c1233;color:var(--txt);border:1px solid rgba(255,255,255,.2);border-radius:10px;padding:10px}
-footer{opacity:.9;text-align:center}
-.badge{display:inline-block;padding:6px 12px;border-radius:999px;background:#1b245c;font-size:12px;margin:4px}
+body{margin:0;font-family:Poppins;background:#f4f6f9;}
+.container{max-width:1200px;margin:auto;padding:20px;}
+
+header{background:#0f172a;color:#fff;padding:20px;}
+nav a{color:#ddd;margin-right:15px;text-decoration:none;}
+
+.hero{
+background:linear-gradient(135deg,#1e3a8a,#2563eb);
+color:#fff;text-align:center;padding:60px 20px;
+}
+
+.search-box{
+background:#fff;padding:20px;margin-top:-30px;
+border-radius:10px;box-shadow:0 5px 20px rgba(0,0,0,0.1);
+text-align:center;
+}
+.search-box input,.search-box select{padding:10px;margin:5px;width:22%;}
+.search-box button{padding:10px 20px;background:#16a34a;color:#fff;border:none;}
+
+.section{padding:40px 20px;}
+.section h2{text-align:center;margin-bottom:20px;}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:15px;
+}
+
+.card{
+background:#fff;padding:15px;border-radius:10px;
+box-shadow:0 4px 12px rgba(0,0,0,0.08);
+text-align:center;
+}
+
+.card img{width:100%;border-radius:8px;}
+
+.btn{
+display:inline-block;margin-top:10px;
+padding:10px 15px;background:#2563eb;color:#fff;
+text-decoration:none;border-radius:5px;
+}
+
+footer{
+background:#020617;color:#ccc;text-align:center;padding:30px;
+}
+
+.whatsapp{
+position:fixed;bottom:20px;right:20px;
+background:#25D366;color:#fff;
+padding:15px;border-radius:50%;
+text-decoration:none;font-size:20px;
+}
 </style>
 </head>
+
 <body>
+
 <header>
-  <div class="wrap" style="display:flex;justify-content:space-between;align-items:center">
-    <div class="logo">
-      <h1>PROMISED LAND<br>REAL ESTATE</h1>
-    </div>
-    <nav>
-      <a href="#search">Search</a>
-      <a href="#post">Post</a>
-      <a href="#map">Map</a>
-      <a href="#ai">AI</a>
-      <a href="#admin">Admin</a>
-    </nav>
-  </div>
+<div class="container">
+<h2>Promised Land</h2>
+<nav>
+<a href="#">Home</a>
+<a href="#">Properties</a>
+<a href="#">Services</a>
+<a href="#">Contact</a>
+</nav>
+</div>
 </header>
 
-<section class="wrap hero">
-  <div class="card">
-    <h1 id="tag">Where Trust Meets Land ✨</h1>
-    <p id="sub" class="mut">AI powered Buy • Sell • Rent across entire Tamil Nadu</p>
-    <div class="grid">
-      <button class="btn">Buy</button>
-      <button class="btn alt">Sell</button>
-      <button class="btn alt">Rent</button>
-    </div>
-    <div style="margin-top:10px">
-      <span class="badge">AI Valuation</span>
-      <span class="badge">40,000+ Villages</span>
-      <span class="badge">Voice AI (Tamil)</span>
-    </div>
-  </div>
-
-  <div class="card" id="ai">
-    <h3>🤖 AI Assistant (Tamil + English)</h3>
-    <input id="q" placeholder="Ex: 10 lakhs plot in Madurai" />
-    <button class="btn" onclick="ai()">Ask AI</button>
-    <div id="chatBox"></div>
-  </div>
+<section class="hero">
+<h1>Find Properties Across Tamil Nadu</h1>
+<p>Buy, Sell & Invest in plots, villas, commercial lands & more</p>
 </section>
 
-<section id="search" class="wrap">
-  <h2>Smart Property Search</h2>
-  <div class="grid">
-    <input placeholder="District / Village" />
-    <select><option>Buy</option><option>Sell</option><option>Rent</option></select>
-    <select><option>Plot</option><option>Agriculture</option><option>Apartment</option><option>Villa</option></select>
-    <input placeholder="Budget ₹" />
-    <button class="btn">Search</button>
-  </div>
+<div class="container search-box">
+<input placeholder="Search location">
+<select><option>Type</option><option>Plot</option><option>Villa</option></select>
+<select><option>Budget</option><option>Below 20L</option></select>
+<button>Search</button>
+</div>
+
+<!-- PROPERTY TYPES -->
+<section class="section">
+<h2>Browse Property Types</h2>
+<div class="grid">
+<div class="card">🏢 Apartments & Flats<br><small>1-4 BHK</small></div>
+<div class="card">🏠 Independent Houses</div>
+<div class="card">🏬 Office & Shops</div>
+<div class="card">🏭 Warehouse</div>
+<div class="card">🌾 Plots & Land</div>
+<div class="card">🌿 Agricultural Land</div>
+<div class="card">🏘️ Villas & Gated</div>
+<div class="card">🍽️ Hotel / Restaurant</div>
+</div>
 </section>
 
-<section id="map" class="wrap">
-  <h2>🗺️ Tamil Nadu Demand Heatmap</h2>
-  <div class="card">
-    <iframe width="100%" height="380" style="border:0;border-radius:18px" loading="lazy"
-      src="https://www.openstreetmap.org/export/embed.html?bbox=76.0%2C8.0%2C80.5%2C13.5&layer=mapnik"></iframe>
-    <p class="mut">Heatmap + property pins (AI demand score)</p>
-  </div>
+<!-- FEATURED -->
+<section class="section">
+<h2>Featured Properties</h2>
+<div class="grid">
+
+<div class="card">
+<img src="https://via.placeholder.com/400x250">
+<h3>Residential Plot</h3>
+<p>📍 Ramanathapuram</p>
+<strong>₹25 Lakhs</strong><br>
+<a class="btn" href="https://wa.me/919080581547">WhatsApp</a>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/400x250">
+<h3>Luxury Villa</h3>
+<p>📍 Chennai</p>
+<strong>₹1.2 Cr</strong><br>
+<a class="btn" href="https://wa.me/919080581547">WhatsApp</a>
+</div>
+
+</div>
 </section>
 
-<section id="post" class="wrap">
-  <h2>Post Property (Free)</h2>
-  <div class="grid">
-    <input placeholder="Title" />
-    <input placeholder="Price" />
-    <input placeholder="Village" />
-    <input type="file" />
-    <textarea placeholder="Description"></textarea>
-    <button class="btn">Upload & Preview</button>
-  </div>
+<!-- SERVICES -->
+<section class="section">
+<h2>Real Estate Services</h2>
+<div class="grid">
+<div class="card">📐 Architects</div>
+<div class="card">🔧 Builders</div>
+<div class="card">⚖️ Lawyers</div>
+<div class="card">🎨 Interior</div>
+<div class="card">🏦 Home Loans</div>
+<div class="card">🔮 Vastu</div>
+<div class="card">📊 Valuers</div>
+<div class="card">🏢 Agents</div>
+</div>
 </section>
 
-<section class="wrap">
-  <h2>📊 Advanced Calculators</h2>
-  <div class="grid">
-    <div class="card"><h4>Auto Property Valuation</h4><p>AI estimates based on village trends</p></div>
-    <div class="card"><h4>EMI / ROI</h4><p>Investment intelligence</p></div>
-    <div class="card"><h4>Stamp Duty</h4><p>Tamil Nadu auto calculator</p></div>
-  </div>
+<!-- DISTRICTS -->
+<section class="section">
+<h2>All Tamil Nadu Districts</h2>
+<div class="grid">
+<div class="card">Ariyalur</div><div class="card">Chengalpattu</div>
+<div class="card">Chennai</div><div class="card">Coimbatore</div>
+<div class="card">Cuddalore</div><div class="card">Dharmapuri</div>
+<div class="card">Dindigul</div><div class="card">Erode</div>
+<div class="card">Hosur</div><div class="card">Kallakurichi</div>
+<div class="card">Kanchipuram</div><div class="card">Kanyakumari</div>
+<div class="card">Karur</div><div class="card">Krishnagiri</div>
+<div class="card">Madurai</div><div class="card">Mayiladuthurai</div>
+<div class="card">Nagapattinam</div><div class="card">Namakkal</div>
+<div class="card">Nilgiris</div><div class="card">Perambalur</div>
+<div class="card">Pudukkottai</div><div class="card">Ramanathapuram</div>
+<div class="card">Ranipet</div><div class="card">Salem</div>
+<div class="card">Sivaganga</div><div class="card">Tenkasi</div>
+<div class="card">Thanjavur</div><div class="card">Theni</div>
+<div class="card">Thoothukudi</div><div class="card">Tiruchirappalli</div>
+<div class="card">Tirunelveli</div><div class="card">Tirupattur</div>
+<div class="card">Tiruppur</div><div class="card">Tiruvallur</div>
+<div class="card">Tiruvannamalai</div><div class="card">Vellore</div>
+<div class="card">Viluppuram</div><div class="card">Virudhunagar</div>
+</div>
 </section>
 
-<section id="admin" class="wrap">
-  <h2>🔐 Admin Login</h2>
-  <div class="grid">
-    <input placeholder="Email" />
-    <input type="password" placeholder="Password" />
-    <button class="btn">Login</button>
-  </div>
+<!-- RERA -->
+<section class="section">
+<h2>RERA Information</h2>
+<div class="card">
+<p>Email: rera.promizedland@gmail.com</p>
+<p>Phone: +91 90805 81547</p>
+<p>All listings are verified for trust & transparency.</p>
+</div>
 </section>
 
-<footer class="wrap">
-  <p>📧 rera.promizedland@gmail.com | 📞 +91 90805 81547</p>
-  <p>© PROMISEDLAND REAL ESTATE • AI Powered Tamil Nadu</p>
+<footer>
+<p>© 2026 Promised Land</p>
+<p>rera.promizedland@gmail.com | +91 90805 81547</p>
 </footer>
 
-<script>
-function ai(){
-  const q=document.getElementById('q');
-  const box=document.getElementById('chatBox');
-  if(!q.value) return;
-  box.innerHTML+=`<p><b>You:</b> ${q.value}</p>`;
-  box.innerHTML+=`<p><b>AI:</b> Analysing village price, budget & best property options…</p>`;
-  q.value='';
-}
-</script>
+<a class="whatsapp" href="https://wa.me/919080581547">💬</a>
+
 </body>
 </html>
