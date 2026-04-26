@@ -4,8 +4,8 @@
    ============================================= */
 
 // ── FIREBASE CONFIG ──────────────────────────────────────────────────────────
-// ⚠️  REPLACE these values with your own Firebase project config.
-// Free setup: https://console.firebase.google.com → New Project → Firestore → Web App
+const SUPABASE_URL  = "https://neujmakqnnwihfmynhfp.supabase.co";
+const SUPABASE_ANON = "sb_publishable_IJXILB_QuchCSyM77qsmmw_68kv-P3w";
 const FIREBASE_CONFIG = {
   apiKey:            "YOUR_API_KEY",
   authDomain:        "YOUR_PROJECT.firebaseapp.com",
